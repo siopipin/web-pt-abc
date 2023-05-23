@@ -1,0 +1,97 @@
+.container {
+    background: cornflowerblue;
+    color: white;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.header, .nav, .section, .aside,  .content, .footer {
+    border: 1px solid white;
+}
+
+.header {
+    padding: 15px;
+    border-style: solid;
+}
+
+.header h1 {
+    text-align: center;
+}
+
+.nav {
+    height: 50px;
+    align-items: center;
+    display: flex;
+}
+
+.nav .menu {
+    margin-top: 5px;
+    margin-left: 12px;
+}
+
+.nav .menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.section {
+    width: 960px;
+    height: 300px;
+}
+
+.aside {
+    float: left;
+    width: 300px;
+    height: 100%;
+}
+
+.aside .item .calender{
+    background: green;
+    width: 90%;
+    height: 150px;
+    margin: 8px auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.iklan {
+    text-align: center;
+    height: 60px;
+    width: 90%;
+    background: red;
+    margin: 8px auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.calender .itemcalender {
+    text-align: center;
+    background: grey;
+    width: 80%;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+}
+
+.content .article {
+    width: 314.5px;
+    height: 80px;
+    background: grey;
+    margin-left: 5px;
+    margin-top: 5px;
+    float: left;
+}
+
+.footer {
+    text-align: center;
+}

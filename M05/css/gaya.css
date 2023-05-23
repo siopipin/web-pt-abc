@@ -1,0 +1,24 @@
+.kotak1 {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    /* float: left; */
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.kotak2 {
+    height: 120px;
+    width: 120px;
+    background-color: yellow;
+    /* margin-left: 20px; */
+}
+
+p {
+    font-size: 30px;
+}
+
+p#teks1 {
+    font-size: 12px;
+}
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClearFix</title>
+    <link rel="stylesheet" href="./css/contoh2.css">
+</head>
+
+<body>
+    <h2>Tanpa clearfix</h2>
+
+    <p>Gambar ini mengapung ke kanan. Gambar ini juga lebih tinggi dari elemen yang menjadi wadahnya, sehingga meluap di
+        luar wadahnya.</p>
+
+    <div>
+        <img class="img1"
+            src="https://www.astronauts.id/blog/wp-content/uploads/2022/12/Kenali-Jenis-jenis-Buah-Apel-dan-Manfaatnya-1200x900.jpg"
+            alt="Nanas" width="170" height="170">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo at doloremque illum nisi facilis commodi odio.
+        Delectus, distinctio nesciunt? Quos eos quaerat impedit harum, vitae recusandae dolorem. Eveniet, sapiente
+        error.
+    </div>
+
+    <h2 style="clear:right">Dengan clearfix</h2>
+    <p>Kita dapat memperbaikinya dengan menambahkan class clearfix dengan overflow: auto ke elemen yang menjadi wadah.
+    </p>
+
+    <div class="clearfix">
+        <img class="img2"
+            src="https://www.astronauts.id/blog/wp-content/uploads/2022/12/Kenali-Jenis-jenis-Buah-Apel-dan-Manfaatnya-1200x900.jpg"
+            alt="Nanas" width="170" height="170">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, commodi dolores corporis impedit delectus sequi,
+        quae tempore vel molestiae fugiat architecto, veniam officiis pariatur consectetur beatae cupiditate numquam
+        iure repudiandae.
+    </div>
+</body>
+
+</html>

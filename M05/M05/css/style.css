@@ -1,0 +1,33 @@
+* {
+    color: aqua;
+}
+
+body {
+    background-color: #c9b0b0;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.container{
+    width: 600px;
+    margin: 0 auto;
+    height: 800px;
+    background-color: white;
+    color: black;
+}
+h1{
+    text-align: center;
+}
+p#kedua{
+    font-variant: small-caps;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+.list{
+    color: black;
+    font-size: 20px;
+    padding-left: 50px;
+}
+img{
+    width: 100px;
+    margin-left: 100px;
+    background-color: aqua;
+}

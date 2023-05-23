@@ -1,0 +1,9 @@
+p{
+    background-color: purple;
+    color: white;
+}
+p:nth-child(even){
+    background-color: blue;
+}
+
+

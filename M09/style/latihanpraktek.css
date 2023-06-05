@@ -1,0 +1,18 @@
+.container {
+    margin: 0 auto;
+    height: 100px;
+    width: 300px;
+    background: rgb(39, 209, 113);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    height: 30px;
+    width: 80px;
+    /* background: grey; */
+    font-size: 13pt;
+    font-weight: bold;
+    color: aliceblue;
+}

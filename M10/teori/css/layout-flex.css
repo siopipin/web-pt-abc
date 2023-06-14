@@ -1,0 +1,118 @@
+.container {
+    max-width: 960px;
+    height: 100%;
+    background-color: whitesmoke;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    height: 100px;
+    background-color: bisque;
+
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.header-title {
+    width: 100px;
+    height: 50px;
+    background-color: cadetblue;
+}
+
+.header-btn {
+    margin-right: 20px;
+    width: 100px;
+    height: 50px;
+    background-color: yellowgreen;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+    height: 400px;
+    background-color: brown;
+}
+
+.row {
+    flex: 1;
+}
+
+.row-1 {
+    background-color: black;
+}
+
+.row-2 {
+    background-color: darksalmon;
+    display: flex;
+    flex-direction: row;
+}
+
+.img {
+    width: 100px;
+    background-color: blue;
+}
+
+.berita {
+    flex: 1;
+    background-color: dimgrey;
+}
+
+.berita h3, p {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.btn {
+    width: 50px;
+    background-color: cadetblue;
+}
+
+.row-3 {
+    background-color: dodgerblue;
+}
+
+.aside {
+    flex: 2;
+    background-color: blue;
+}
+
+.footer {
+    max-width: 960px;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+@media (max-width: 480px) {
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .content {
+        flex: 1;
+    }
+
+    .aside {
+        flex: 1;
+        background-color: blue;
+    }
+
+    .berita h3, p {
+        margin: 0;
+        padding: 0;
+        color: red;
+    }
+
+}

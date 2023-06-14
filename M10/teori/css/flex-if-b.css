@@ -1,0 +1,45 @@
+.container {
+    max-width: 960px;
+    background-color: tomato;
+    margin: 0 auto;
+    /* margin-right: 100px;
+    margin-left: 100px; */
+}
+.row {
+    /* height: 500px; */
+    display: flex;
+    flex-direction: row;
+
+    /* justify dan align */
+    justify-content: space-around;
+    align-items: center;
+ 
+    /* flex untuk mengatur item -> wrap */
+    flex-wrap: wrap;
+}
+
+.item {
+    border: 10px solid gray;
+    background-color: blue;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+.box-1 {
+    height: 200px;
+    width: 200px;
+    /* flex: 2; */
+}
+
+.box-2 {
+    height: 200px;
+    width: 200px;
+    
+}
+
+.box-3 {
+    height: 200px;
+    width: 200px;
+    
+}

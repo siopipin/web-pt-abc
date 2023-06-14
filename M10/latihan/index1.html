@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 1020px;
+            height: 100%;
+            color: white;
+            margin: 0 auto;
+        }
+        .height1{
+            height: 50px;
+            line-height: 50px;
+        }
+        .height2{
+            height: 100px;
+            line-height: 100px;
+        }
+        .height3{
+            height: 80px;
+            line-height: 80px;
+        }
+        .mid{
+            width: 100%;
+            margin: 0 auto;
+        }
+        .row{
+            clear: both;
+            margin: 0 20%;
+        }
+        .row, .header, .footer{
+            width: 100%;
+        }
+        .main-content, .sidebar, .twin{
+            float: left;
+            margin: 0 5px 5px 0;
+            padding: 10px;
+        }
+        .footer{
+            clear: both;
+        }
+        .main-content{
+            background-color: lightblue;
+        }
+        .header{
+            background-color: lightblue;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        .main-content{
+            background-color: lightgreen;
+            width: 40%;
+        }
+        .sidebar{
+            background-color: purple;
+            width: 20%;
+        }
+        .twin{
+            background-color: orange;
+            width: 30%;
+        }
+        .footer{
+            background-color: darkblue;
+            width: 100%;
+        }
+        @media screen and (max-width: 480px) {
+            .main-content, .sidebar, .twin{
+                float: none;
+                margin: 0;
+                padding: 0;
+                width: 100% !important;
+            }
+            .row{
+                margin: 0;
+                padding: 0;
+            }
+            .header, .footer, .main-content, .sidebar, .twin{
+                margin-bottom: 10px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header height1">
+            .header
+        </div>
+        <div class="mid">
+            <div class="row">
+                <div class="main-content height2">
+                    .main-content
+                </div>
+                <div class="sidebar height2">
+                    .sidebar
+                </div>
+            </div>
+            <div class="row">
+                <div class="twin height3">
+                    .twin
+                </div>
+                <div class="twin height3">
+                    .twin
+                </div>
+            </div>
+        </div>
+        <div class="footer height1">
+            .footer
+        </div>
+    </div>
+</body>
+</html>

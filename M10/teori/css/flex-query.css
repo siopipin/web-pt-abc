@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    max-width: 960px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+}
+
+.main {
+    flex:4;
+    background-color: tomato;
+}
+
+.aside {
+    flex: 1;
+    background-color:bisque;
+}
+
+@media(max-width: 800px) {
+    .container{
+        flex-direction: column;
+    }
+}

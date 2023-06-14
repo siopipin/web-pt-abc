@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            margin-bottom: 10px;
+            
+        }
+        .box1{
+            animation-name: apriSaja1;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+        }
+        @keyframes apriSaja1 {
+            0% {left: 0px; background-color: red;}
+            50% {left: 300px; background-color: blue;}
+            100% {left: 600px; background-color: green;}
+            150% {left: 600px; background-color: black;}
+        }
+
+        .box2{
+            animation-name: apriSaja1;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease;
+        }
+        .box3{
+            animation-name: apriSaja1;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in;
+        }
+        .box4{
+            animation-name: apriSaja1;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-out;
+        }
+    </style>
+</head>
+<body>   
+    <h1>The animation-timing-function Property</h1>
+    <p>Play an animation with the same speed from beginning to end:</p>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+</body>
+</html>
+

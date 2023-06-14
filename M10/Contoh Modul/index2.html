@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            margin: 10px;
+            /*transition: width 2s, height 2s, transform 2s;
+            transition-property: width, height, transform;*/
+            transition-property: transform;
+            transition-duration: 2s;
+        }
+
+        div:hover {
+            /*width: 300px;
+            height: 300px;
+            transform: rotate(180deg);*/
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>Transition + Transform</h1>
+
+    <p>Hover over the div element below:</p>
+
+    <div></div>
+    <div></div>
+</body>
+</html>
+

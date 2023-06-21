@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Latihan JavaScript: Daftar Belanja</title>
+    <script>
+        function addItem() {
+            var item = prompt("Masukkan item belanjaan:");
+
+            if (item) {
+                var list = document.getElementById("shoppingList");
+                var listItem = document.createElement("li");
+                listItem.appendChild(document.createTextNode(item));
+                list.appendChild(listItem);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Daftar Belanja</h1>
+
+    <ul id="shoppingList">
+        <li>Apel</li>
+        <li>Pisang</li>
+        <li>Jeruk</li>
+    </ul>
+
+    <br>
+
+    <button onclick="addItem()">Tambah Item</button>
+</body>
+
+</html>

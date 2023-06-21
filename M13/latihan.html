@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contoh Manipulasi Konten dengan JavaScript</title>
+    <script>
+        function changeProduct() {
+            var selectedColor = document.getElementById("colorSelect").value;
+            var productImage = document.getElementById("productImage");
+            var productDescription = document.getElementById("productDescription");
+
+            // Mengubah gambar produk sesuai dengan opsi warna yang dipilih
+            if (selectedColor === "ie") {
+                productImage.src = "./assets/ie-logo.png";
+            } else if (selectedColor === "chrome") {
+                productImage.src = "./assets/chrome-logo.png";
+            } else if (selectedColor === "firefox") {
+                productImage.src = "./assets/firefox.png";
+            }
+
+            // Mengubah deskripsi produk sesuai dengan opsi warna yang dipilih
+            if (selectedColor === "ie") {
+                productDescription.innerHTML = "Internet Explorer berhasil terpilih, yakin?";
+            } else if (selectedColor === "chrome") {
+                productDescription.innerHTML = "Google Chrome Berhasil Terpilih";
+            } else if (selectedColor === "firefox") {
+                productDescription.innerHTML = "Firefox berhasil terpilih";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Pilih Browser:</h1>
+    <select id="colorSelect" onchange="changeProduct()">
+        <option value="ie">Internet Explorer</option>
+        <option value="chrome">Google Chrome</option>
+        <option value="firefox">FireFox</option>
+    </select>
+
+    <br><br>
+
+    <img id="productImage" src="./assets/browser.png" alt="Gambar Produk" style="max-width: 200px;">
+    <p id="productDescription">Pilih Browser Kesukaan Anda.</p>
+</body>
+
+</html>

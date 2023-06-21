@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-01</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th.top{
+            border-top: 0px !important;
+        }
+        th.bottom{
+            border-bottom: 0px !important;
+        }
+    </style>
+</head>
+<body>
+    <h1>CONTOH LAPORAN PENJUALAN PERBULAN</h1>
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Tanggal</th>
+            <th>Sales</th>
+            <th>Barang</th>
+            <th>Cara Bayar</th>
+            <th>Harga Bayar</th>
+            <th>Qty</th>
+            <th>Jumlah</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>01-Feb-22</td>
+            <td>Sales A</td>
+            <td>Barang 1</td>
+            <td>Tunai</td>
+            <td>250</td>
+            <td>2</td>
+            <td>500,00</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>04-Feb-22</td>
+            <td>Sales B</td>
+            <td>Barang 2</td>
+            <td>Kredit</td>
+            <td>1.500</td>
+            <td>1</td>
+            <td>1.500,00</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>10-Feb-22</td>
+            <td>Sales A</td>
+            <td>Barang 1</td>
+            <td>Kredit</td>
+            <td>4.500</td>
+            <td>2</td>
+            <td>9.000,00</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>25-Feb-22</td>
+            <td>Sales B</td>
+            <td>Barang 1</td>
+            <td>Tunai</td>
+            <td>5.000</td>
+            <td>4</td>
+            <td>20.000,00</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>28-Feb-22</td>
+            <td>Sales A</td>
+            <td>Barang 2</td>
+            <td>Tunai</td>
+            <td>3.000</td>
+            <td>1</td>
+            <td>3.000,00</td>
+        </tr>
+        <tr>
+            <th colspan="6">Total</th>
+            <th>10</th>
+            <th>34.000,00</th>
+        </tr>
+        <tr>
+            <th colspan="6" class="bottom">Sales A</th>
+            <th class="bottom">37%</th>
+            <th>12.500,00</th>
+        </tr>
+        <tr>
+            <th colspan="6" class="top">Sales B</th>
+            <th class="top">63%</th>
+            <th>21.500,00</th>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penggabungan Table</title>
+    <style>
+        body{
+            width: 800px;
+            margin: 100px auto;
+        }
+        table{
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        th, td{
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="2" rowspan="2">Data</th>
+            <th colspan="2">Data</th>
+        </tr>
+        <tr>
+            <th>Data</th>
+            <th>Data</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Data</th>
+            <th>Data</th>
+            <td>Q</td>
+            <td>Q</td>
+        </tr>
+        <tr>
+            <th>Data</th>
+            <td>Q</td>
+            <td>Q</td>
+        </tr>
+    </table>
+</body>
+</html>

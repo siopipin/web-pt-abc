@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contoh Interaksi JavaScript</title>
+    <script>
+        function changeContent() {
+            document.getElementById("myElement").innerHTML = "Teks baru";
+            document.querySelector("img").src = "./assets/chrome-logo.png";
+            document.getElementsByClassName("myClass")[0].classList.add("newClass");
+        }
+    </script>
+    <style>
+        .newClass {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="myElement">Teks awal</h1>
+    <img src="./assets/ie-logo.png" style="max-width: 200px;">
+    <p class="myClass">Paragraf dengan kelas "myClass"</p>
+
+    <button onclick="changeContent()">Ubah Konten</button>
+</body>
+</html>

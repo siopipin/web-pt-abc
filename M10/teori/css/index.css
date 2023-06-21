@@ -1,0 +1,68 @@
+.container {
+    max-width: 960px;
+    height: 600px;
+    background-color: antiquewhite;
+    margin: 0 auto;
+}
+
+.header {
+    max-width: 960px;
+    height: 100px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.nav {
+    max-width: 960px;
+    height: 60px;
+    background-color: cadetblue;
+    display:  flex;
+}
+
+
+
+.title {
+    width: 150px;
+    height: 30px;
+    background-color: black;
+}
+
+.title {
+    font-size: 18pt;
+    font-weight: bold;
+    color: white;
+}
+
+.body {
+    max-width: 960px;
+    height: 500px;
+    display: flex;
+}
+
+.article {
+    background-color: red;
+    flex: 2;
+}
+
+.aside {
+    /* width: 350px; */
+    flex: 1;
+    background-color: blue;
+}
+
+@media (max-width: 500px) {
+    .aside {
+        background-color: yellow;
+    }
+
+    .title {
+        font-size: 12pt;
+    }
+    
+    .body {
+        flex-direction: column;
+    }
+}
